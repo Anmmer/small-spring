@@ -3,7 +3,6 @@ package com.yica.springframework.beans.factory.support;
 import com.yica.springframework.beans.BeansException;
 import com.yica.springframework.beans.factory.BeanFactory;
 import com.yica.springframework.beans.factory.config.BeanDefinition;
-import com.yica.springframework.beans.factory.config.DefaultSingletonBeanRegistry;
 
 /**
  * @description:

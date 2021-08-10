@@ -6,6 +6,8 @@ import com.yica.springframework.beans.factory.support.DefaultListableBeanFactory
 import com.yica.springframework.test.baen.UserService;
 import org.junit.Test;
 
+import java.util.HashMap;
+
 /**
  * @description:
  * @author:
@@ -25,6 +27,14 @@ public class ApiTest {
         //3.获取bean
         UserService userService = (UserService) beanFactory.getBean("userService");
         userService.queryUserInfo();
+    }
+
+    @Test
+    public void test(){
+        HashMap<String,String> hashMap = new HashMap<>();
+        System.out.println(hashMap.put("1", "1"));
+        System.out.println(hashMap.put("1", "2"));
+        System.out.println(hashMap.get("1"));
     }
 
 }
