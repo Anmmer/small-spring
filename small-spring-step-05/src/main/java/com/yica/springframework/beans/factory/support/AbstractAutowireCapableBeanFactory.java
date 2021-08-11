@@ -16,7 +16,7 @@ import java.lang.reflect.Constructor;
  */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory {
 
-    private InstantiationStrategy instantiationStrategy = new CglibSubclassingInstantiationStrategy();
+    private final InstantiationStrategy instantiationStrategy = new CglibSubclassingInstantiationStrategy();
 
     protected Object createBean(String beanName, BeanDefinition beanDefinition, Object[] args) {
         Object bean;

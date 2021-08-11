@@ -1,4 +1,4 @@
-package com.yica.springframework.test.baen;
+package com.yica.springframework.test.bean;
 
 import java.util.HashMap;
 import java.util.Map;

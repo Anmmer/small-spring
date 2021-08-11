@@ -3,7 +3,7 @@ package com.yica.springframework.test;
 
 import com.yica.springframework.BeanDefinition;
 import com.yica.springframework.BeanFactory;
-import com.yica.springframework.test.baen.UserService;
+import com.yica.springframework.test.bean.UserService;
 import org.junit.Test;
 
 /**

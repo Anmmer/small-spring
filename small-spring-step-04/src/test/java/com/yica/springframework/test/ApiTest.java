@@ -6,11 +6,9 @@ import com.yica.springframework.beans.PropertyValues;
 import com.yica.springframework.beans.factory.config.BeanDefinition;
 import com.yica.springframework.beans.factory.config.BeanReference;
 import com.yica.springframework.beans.factory.support.DefaultListableBeanFactory;
-import com.yica.springframework.test.baen.UserDao;
-import com.yica.springframework.test.baen.UserService;
+import com.yica.springframework.test.bean.UserDao;
+import com.yica.springframework.test.bean.UserService;
 import org.junit.Test;
-
-import java.util.HashMap;
 
 /**
  * @description:

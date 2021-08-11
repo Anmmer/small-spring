@@ -3,7 +3,7 @@ package com.yica.springframework.test;
 
 import com.yica.springframework.beans.factory.config.BeanDefinition;
 import com.yica.springframework.beans.factory.support.DefaultListableBeanFactory;
-import com.yica.springframework.test.baen.UserService;
+import com.yica.springframework.test.bean.UserService;
 import org.junit.Test;
 
 import java.util.HashMap;

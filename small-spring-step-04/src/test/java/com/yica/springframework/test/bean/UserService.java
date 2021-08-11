@@ -1,4 +1,4 @@
-package com.yica.springframework.test.baen;
+package com.yica.springframework.test.bean;
 
 /**
  * @description:
