@@ -3,7 +3,7 @@ package com.yica.springframework.beans.factory.support;
 import com.yica.springframework.beans.BeansException;
 import com.yica.springframework.core.io.ResourceLoader;
 
-import javax.annotation.Resource;
+import com.yica.springframework.core.io.Resource;
 
 /**
  * @description:
