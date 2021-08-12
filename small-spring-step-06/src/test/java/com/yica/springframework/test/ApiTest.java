@@ -7,6 +7,7 @@ import com.yica.springframework.beans.factory.config.BeanDefinition;
 import com.yica.springframework.beans.factory.config.BeanReference;
 import com.yica.springframework.beans.factory.support.DefaultListableBeanFactory;
 import com.yica.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+import com.yica.springframework.context.support.ClassPathXmlApplicationContext;
 import com.yica.springframework.test.bean.UserDao;
 import com.yica.springframework.test.bean.UserService;
 import com.yica.springframework.test.common.MyBeanFactoryPostProcessor;
@@ -40,6 +41,16 @@ public class ApiTest {
 
         // 5. 获取Bean对象调用方法
         UserService userService = beanFactory.getBean("userService", UserService.class);
+        String result = userService.queryUserInfo();
+        System.out.println("测试结果：" + result);
+    }
+
+    @Test
+    public void test_xml() {
+        // 1.初始化 BeanFactory
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring_postProcessor.xml");
+        // 2. 获取Bean对象调用方法
+        UserService userService = applicationContext.getBean("userService", UserService.class);
         String result = userService.queryUserInfo();
         System.out.println("测试结果：" + result);
     }
