@@ -24,6 +24,7 @@ public class ApiTest {
 
     @Test
     public void test_xml() {
+
         // 1.初始化 BeanFactory
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring.xml");
         applicationContext.registerShutdownHook();
