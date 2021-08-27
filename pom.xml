@@ -17,6 +17,7 @@
         <module>small-spring-step-05</module>
         <module>small-spring-step-06</module>
         <module>small-spring-step-07</module>
+        <module>small-spring-step-09</module>
     </modules>
 
     <dependencies>
@@ -41,6 +42,13 @@
             <artifactId>hutool-all</artifactId>
             <version>5.7.7</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.openjdk.jol/jol-core -->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.12</version>
+        </dependency>
+
     </dependencies>
 
     <properties>
