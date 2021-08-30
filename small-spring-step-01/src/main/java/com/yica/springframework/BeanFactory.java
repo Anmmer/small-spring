@@ -10,13 +10,13 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class BeanFactory {
 
-    private final Map<String,BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String,BeanDefinition>();
+    private final Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String, BeanDefinition>();
 
-    public Object getBean(String name){
-       return beanDefinitionMap.get(name).getBean();
+    public Object getBean(String name) {
+        return beanDefinitionMap.get(name).getBean();
     }
 
-    public void registerBeanDefinition(String name,BeanDefinition beanDefinition){
-        this.beanDefinitionMap.put(name,beanDefinition);
+    public void registerBeanDefinition(String name, BeanDefinition beanDefinition) {
+        this.beanDefinitionMap.put(name, beanDefinition);
     }
 }
